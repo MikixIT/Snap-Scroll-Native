@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,200;1,400&display=swap');
+
+        html{ 
+            overflow: hidden;
+        }
+
+        body{ 
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .container{
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+            width: 100%;
+        }
+
+        section{ 
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: white solid 1px;
+            font-size: 64px;
+            font-weight: 400;
+            scroll-snap-align: start;
+        }
+
+        .rainbow-color{
+            animation: rgbColor 22s linear 0s infinite;
+        }
+        
+
+        @keyframes rgbColor {
+          from {
+            background-color: #6666ff;
+          }
+          10% {
+            background-color: #0099ff;
+          }
+
+          25%{
+            background-color: #2ec52e ;
+          }
+
+          50% {
+            background-color: #1d781d;
+          }
+          75% {
+            background-color: #b42446;
+          }
+          100% {
+            background-color: #6666ff;
+          }
+        }
+
+
+    </style>
+    <title>Snap CSS</title>
+</head>
+<body>
+    <div class="container rainbow-color">
+        <section>😇 First Page</section>
+        <section>🏆 Second Page</section>
+        <section>🥺 Third Page</section>
+        <section>💀 Forth  Page</section>
+        <section>🌙 Fifth Page</section>
+    </div>
+</body>
+</html>
