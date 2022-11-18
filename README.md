@@ -1,6 +1,6 @@
 # Snap-Scroll-Native
 
-Snap Scroll Native with rainbow pages | CSS Without any frameworks
+Snap Scroll Native with rainbow emojis pages | CSS Without any frameworks
 
 ![](Preview.gif)
 
